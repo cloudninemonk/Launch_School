@@ -24,6 +24,7 @@ The function invokement has not been implemented outside of the function.
 The function arguments are both strings. Considering non-empty strings 
 are truthy, sunshine will always be True.
 """
+import random
 
 def predict_weather():
     sunshine = random.choice([True, False])
