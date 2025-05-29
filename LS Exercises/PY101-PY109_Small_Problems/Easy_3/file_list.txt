@@ -1,0 +1,10 @@
+01_repeat_yourself.py
+02_ddaailllyy_ddoouubbllee.py
+03_bannerizer.py
+04_strings_strings.py
+05_right_triangles.py
+06_madlibs.py
+07_double_doubles.py
+08_grade_book.py
+09_clean_up_the_words.py
+10_what_century_is_that.py

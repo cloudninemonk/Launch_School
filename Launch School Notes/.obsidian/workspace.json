@@ -1,0 +1,337 @@
+{
+  "main": {
+    "id": "6a3b274b847c661d",
+    "type": "split",
+    "children": [
+      {
+        "id": "25d72c157f0b1cde",
+        "type": "tabs",
+        "dimension": 64.34010152284264,
+        "children": [
+          {
+            "id": "7866224ac3df70aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Studying/Course Notes Template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Course Notes Template"
+            }
+          },
+          {
+            "id": "7972eb1934d53382",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Course Notes Template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Course Notes Template"
+            }
+          },
+          {
+            "id": "0897a931d65dd8d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Solving Coding Problems With PEDAC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solving Coding Problems With PEDAC"
+            }
+          },
+          {
+            "id": "57bf850ab5bd5726",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exercises/PY101-PY109 Small Problems/Easy_1/01_Isn_t_it_Odd?.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_Isn_t_it_Odd?"
+            }
+          },
+          {
+            "id": "a2a07b6431596cb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PY101_Programming_Foundations_with_Python_Basics/Assignments/Lesson 1 Quiz 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lesson 1 Quiz 1"
+            }
+          },
+          {
+            "id": "652073615980405d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Welcome"
+            }
+          },
+          {
+            "id": "6ef0f049830c806a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PY101_Programming_Foundations_with_Python_Basics/4. Truthiness.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4. Truthiness"
+            }
+          },
+          {
+            "id": "37c6a1cac5f2f8b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PY101_Programming_Foundations_with_Python_Basics/5. Style Guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5. Style Guide"
+            }
+          },
+          {
+            "id": "3cf92472c2421194",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TEMPLATES/TEMPLATE, LS_Exercises_PEDAC_Template (DELETE AND REPLACE WITH EXERCISE NAME).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TEMPLATE, LS_Exercises_PEDAC_Template (DELETE AND REPLACE WITH EXERCISE NAME)"
+            }
+          }
+        ],
+        "currentTab": 7
+      },
+      {
+        "id": "003c23aa0acfa3e1",
+        "type": "tabs",
+        "dimension": 35.659898477157356,
+        "children": [
+          {
+            "id": "bde92a961cfe2291",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ba762fa0951d6cbc",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee9f222817214f78",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dafc14b754290fa4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c34ba425bd4670e9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#EXERCISES",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3b99b4a32bd9f56d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 545.5
+  },
+  "right": {
+    "id": "726bf7c8962b5ff5",
+    "type": "split",
+    "children": [
+      {
+        "id": "913dadbf6abe5d67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dfd59f795d34a2c6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "086012ead071d0d3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "2298aa7d539f25cb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "76052c9cfb804979",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "dafc14b754290fa4",
+  "lastOpenFiles": [
+    "PY101_Programming_Foundations_with_Python_Basics/4. Truthiness.md",
+    "PY101_Programming_Foundations_with_Python_Basics/5. Style Guide.md",
+    "PY101_Programming_Foundations_with_Python_Basics/3. Virtual Environments.md",
+    "Untitled.md",
+    "Welcome.md",
+    "PY101_Programming_Foundations_with_Python_Basics/If, elif and else statements.md",
+    "Memory storage allocation for nested iterables.md",
+    "Python Virtual Environments.md",
+    "PY101_Programming_Foundations_with_Python_Basics/Assignments/Lesson 1 Quiz 1.md",
+    "PY101_Programming_Foundations_with_Python_Basics/Assignments",
+    "Pasted images/Pasted image 20250507061423.png",
+    "Pasted images",
+    "Pasted images/Pasted image 20250507061537.png",
+    "Pasted images/Pasted image 20250507061525.png",
+    "Pasted images/Pasted image 20250507061511.png",
+    "Pasted images/Pasted image 20250507061450.png",
+    "Pasted images/Pasted image 20250507061620.png",
+    "Pasted images/Pasted image 20250507061609.png",
+    "Pasted images/Pasted image 20250507061559.png",
+    "Pasted images/Pasted image 20250507061548.png",
+    "Exercises/PY101-PY109 Small Problems/Easy_1/01_Isn_t_it_Odd?.md",
+    "Quiz 1",
+    "TEMPLATES/TEMPLATE, LS_Exercises_PEDAC_Template (DELETE AND REPLACE WITH EXERCISE NAME).md",
+    "TEMPLATES",
+    "Exercises/PEDAC - CODING TEMPLATE.md",
+    "Studying/Course Notes Template.md",
+    "Exercises/PY101-PY109 Small Problems/Easy_1",
+    "Solving Coding Problems With PEDAC.md",
+    "Exercises/PY101-PY109 Small Problems",
+    "Exercises",
+    "Studying",
+    "PY101_Programming_Foundations_with_Python_Basics"
+  ]
+}

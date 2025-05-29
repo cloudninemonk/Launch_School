@@ -1,0 +1,12 @@
+01_Isn_t_it_Odd?.py
+02_Odd_Numbers.py
+03_Even_Numbers.py
+04_How_big_is_the_room?.py
+05_Tip_Calculator.py
+06_Sum_or_Product_of_Consecutive_Integers.py
+07_Short_Long_Short.py
+08_Leap_Years_Part_1.py
+09_Leap_Years_Part_2.py
+10_Multiples_of_3_and_5.py
+11_UTF-16_String_Value.py
+
