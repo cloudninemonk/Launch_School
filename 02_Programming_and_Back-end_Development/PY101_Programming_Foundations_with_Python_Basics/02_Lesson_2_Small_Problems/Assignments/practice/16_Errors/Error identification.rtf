@@ -1,0 +1,260 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red251\green0\blue7;\red255\green255\blue255;\red201\green202\blue199;
+\red0\green0\blue0;\red255\green255\blue255;\red201\green202\blue199;\red200\green202\blue199;\red200\green201\blue199;
+\red0\green0\blue0;\red200\green201\blue200;\red145\green218\blue255;\red195\green195\blue192;\red205\green205\blue202;
+\red168\green198\blue150;\red185\green112\blue179;\red67\green193\blue160;\red211\green213\blue150;\red193\green125\blue98;
+\red75\green143\blue210;\red200\green201\blue200;\red200\green201\blue200;\red200\green201\blue201;\red200\green201\blue200;
+\red199\green201\blue201;\red223\green124\blue33;\red0\green0\blue0;\red199\green200\blue201;\red0\green0\blue0;
+\red71\green138\blue206;\red193\green193\blue193;\red212\green213\blue153;\red141\green213\blue254;\red183\green111\blue179;
+\red203\green203\blue202;\red194\green125\blue100;\red67\green192\blue160;\red167\green197\blue151;\red194\green194\blue193;
+\red212\green213\blue153;\red193\green193\blue193;\red167\green197\blue151;\red251\green0\blue7;\red223\green125\blue34;
+\red193\green193\blue193;\red199\green200\blue201;\red20\green22\blue25;\red0\green0\blue0;\red199\green200\blue201;
+\red194\green194\blue192;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c12195\c0;\cssrgb\c100000\c100000\c99985;\cssrgb\c82745\c83137\c82189;
+\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c100000;\cssrgb\c82656\c83050\c82205;\cssrgb\c82568\c82962\c82220;\cssrgb\c82390\c82784\c82250;
+\cssrgb\c0\c1\c1;\cssrgb\c82300\c82694\c82264;\cssrgb\c62816\c88187\c100000;\cssrgb\c80778\c80775\c79871;\cssrgb\c83946\c83942\c83003;
+\cssrgb\c71210\c80973\c65161;\cssrgb\c77927\c53204\c75330;\cssrgb\c30775\c79286\c69024;\cssrgb\c86129\c85984\c65406;\cssrgb\c80709\c56540\c45828;
+\cssrgb\c35619\c63431\c85787;\cssrgb\c82277\c82671\c82344;\cssrgb\c82289\c82684\c82459;\cssrgb\c82313\c82707\c82688;\cssrgb\c82302\c82696\c82574;
+\cssrgb\c82239\c82633\c82717;\cssrgb\c90452\c56158\c16601;\cssrgb\c0\c1\c1;\cssrgb\c82147\c82540\c82727;\cssrgb\c0\c0\c0;
+\cssrgb\c34146\c61677\c84338;\cssrgb\c80176\c80176\c79976;\cssrgb\c86247\c86215\c66392;\cssrgb\c61545\c86704\c99884;\cssrgb\c77407\c52698\c75307;
+\cssrgb\c83320\c83320\c83112;\cssrgb\c80772\c56796\c46790;\cssrgb\c30631\c78928\c69023;\cssrgb\c71035\c80830\c65726;\cssrgb\c80351\c80350\c79949;
+\cssrgb\c86232\c86184\c66253;\cssrgb\c80264\c80263\c79963;\cssrgb\c71061\c80852\c65647;\cssrgb\c99893\c12008\c0;\cssrgb\c90629\c56394\c16951;
+\cssrgb\c80000\c80000\c80000;\cssrgb\c81961\c82353\c82745;\cssrgb\c10196\c11373\c12941;\cssrgb\c0\c1\c1;\cssrgb\c82147\c82540\c82727;
+\cssrgb\c80523\c80521\c79920;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww38200\viewh22380\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Practice Questions for Error Identification (PY101)\cf5 \cb6 \strokec7 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0 \cf2 \cb3 \strokec4 1.\'a0\'a0 
+\f0\b \cf2 \cb3 \strokec4 Basic
+\f1\b0 \cf2 \cb3 \strokec4  : Identify the error in the following code and explain how to fix it:\cf5 \cb6 \strokec7 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec7  \'a0 \'a0user_input = input("Enter a number: ")\
+ \'a0 \'a0result = 100 / user_input\
+ \'a0 \'a0print(f"100 divided by your number is \{result\}")\
+\
+A TypeError will initially be produced as a string is assigned to user_input. To rectify this, the string will need to be converted to a number using int or float type. i.e., int(input(\'93Enter a number: \'93))\
+A ValueError will be produced if the user input is not a number.\
+A ZeroDivisionError will arise if the user input is zero as the expression assigned to result has the user_input as the denominator.\
+\
+\cf5 \strokec8 \
+ \'a0 \'a0\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec9 2.\'a0\'a0 
+\f0\b \cf2 \cb3 \strokec9 Intermediate
+\f1\b0 \cf2 \cb3 \strokec9  : Which error(s) might occur in the following code? Write a proper exception handling block to address all potential issues:\cf10 \cb6 \strokec11 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \strokec11  \'a0 \'a0numbers = [10, 20, 30, 40]\
+ \'a0 \'a0index = int(input("Enter an index to access: "))\
+ \'a0 \'a0element = numbers[index]\
+ \'a0 \'a0result = 100 / element\
+ \'a0 \'a0print(f"Result: \{result\}")\
+\
+A ValueError will arise if the user input is not a number. A while loop to be incorporated to continue asking the user for a number until a number is entered.\
+An IndexError will occur if the user input is => the number of elements. \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \strokec12 numbers\cf10 \strokec13  \cf10 \strokec14 =\cf10 \strokec13  [\cf10 \strokec15 10\cf10 \strokec13 , \cf10 \strokec15 20\cf10 \strokec13 , \cf10 \strokec15 30\cf10 \strokec13 , \cf10 \strokec15 40\cf10 \strokec13 ]\
+\cf10 \strokec16 try\cf10 \strokec13 :\
+    \cf10 \strokec12 index\cf10 \strokec13  \cf10 \strokec14 =\cf10 \strokec13  \cf10 \strokec17 int\cf10 \strokec13 (\cf10 \strokec18 input\cf10 \strokec13 (\cf10 \strokec19 "Enter an index to access: "\cf10 \strokec13 ))\
+\cf10 \strokec16 except\cf10 \strokec13  \cf10 \strokec17 ValueError\cf10 \strokec13 :\
+    \cf10 \strokec18 print\cf10 \strokec13 (\cf10 \strokec19 'Invalid input. You did not enter a valid number.'\cf10 \strokec13 )\
+    \cf10 \strokec12 element\cf10 \strokec13  \cf10 \strokec14 =\cf10 \strokec13  \cf10 \strokec12 numbers\cf10 \strokec13 [index]\
+\cf10 \strokec16 except\cf10 \strokec13  \cf10 \strokec17 IndexError\cf10 \strokec13 :\
+    \cf10 \strokec18 print\cf10 \strokec13 (\cf10 \strokec19 'The number you entered is not a valid index.'\cf10 \strokec13 )\
+    \cf10 \strokec12 result\cf10 \strokec13  \cf10 \strokec14 =\cf10 \strokec13  \cf10 \strokec15 100\cf10 \strokec13  \cf10 \strokec14 /\cf10 \strokec13  element\
+\cf10 \strokec16 else\cf10 \strokec13 :\
+    \cf10 \strokec18 print\cf10 \strokec13 (\cf10 \strokec20 f\cf10 \strokec19 "Result: \cf10 \strokec20 \{\cf10 \strokec13 result\cf10 \strokec20 \}\cf10 \strokec19 "\cf10 \strokec13 )\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec21 3.\'a0\'a0 
+\f0\b \cf2 \cb3 \strokec21 Basic
+\f1\b0 \cf2 \cb3 \strokec21  : Identify which of the following Python operations would cause an error and explain why:\cf5 \cb6 \strokec22 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \strokec23  \'a0 \'a0a) numbers = [1, 2, 3]\
+ \'a0 \'a0 \'a0 print(numbers[3])\
+	  # An IndexError would occur as 3 is greater than the largest index, 2, in numbers.\
+\
+ \'a0 \'a0b) my_dict = \{"name": "Tristan", "course": "PY101"\}\
+ \'a0 \'a0 \'a0 print(my_dict["age"])\
+       	# A KeyError would occur as \'91age\'92 is not a key in my_dict\
+\
+ \'a0 \'a0c) result = 10 / 2\
+	# No error would occur as 10 is divisible by 2.\
+ \'a0 \'a0d) value = int("hello")\
+	# A ValueError would occur as \'91hello\'92 cannot be converted to an integer.\
+\
+\cf2 \cb3 \strokec24 4. 
+\fs30 \cf2 \cb3 \strokec25 \'a0 
+\f0\b \cf2 \cb3 \strokec25 Intermediate
+\f1\b0 \cf2 \cb3 \strokec25  : Write a function called\'a0
+\fs24 \cf2 \cb3 \strokec26 safe_divide
+\fs30 \cf2 \cb3 \strokec25 \'a0that takes two parameters and returns their division. The function should handle potential errors such as division by zero and return an appropriate message instead of crashing.\cf27 \cb6 \strokec28 \
+\pard\pardeftab720\partightenfactor0
+\cf29 \cb3 \strokec25 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf29 \cb3 \strokec30 def\cb3 \strokec31  \cb3 \strokec32 safe_divide\cb3 \strokec31 (\cb3 \strokec33 num1\cb3 \strokec31 , \cb3 \strokec33 num2\cb3 \strokec31 ):\
+    \cb3 \strokec34 try\cb3 \strokec31 :\
+        \cb3 \strokec33 result\cb3 \strokec31   \cb3 \strokec35 =\cb3 \strokec31  \cb3 \strokec33 num1\cb3 \strokec31  \cb3 \strokec35 /\cb3 \strokec31  \cb3 \strokec33 num2\cb3 \strokec31 \
+    \cb3 \strokec34 except\cb3 \strokec31  NameError:\
+        \cb3 \strokec32 print\cb3 \strokec31 (\cb3 \strokec36 'name error'\cb3 \strokec31 )\
+    \cb3 \strokec34 except\cb3 \strokec31  \cb3 \strokec37 ZeroDivisionError\cb3 \strokec31 :\
+        \cb3 \strokec32 print\cb3 \strokec31 (\cb3 \strokec36 'cannot divide by zero'\cb3 \strokec31 )\
+    \cb3 \strokec34 else\cb3 \strokec31 :\
+        \cb3 \strokec32 return result\cb3 \strokec31 \
+    \cb3 \strokec34 finally\cb3 \strokec31 :\
+        \cb3 \strokec32 print\cb3 \strokec31 (\cb3 \strokec36 'exception handling complete'\cb3 \strokec31 )\
+    \
+\cb3 \strokec32 safe_divide\cb3 \strokec31 (\cb3 \strokec38 5\cb3 \strokec31 , \cb3 \strokec38 2\cb3 \strokec31 )   \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs30 \cf2 \cb3 \strokec28 5.\'a0\'a0 
+\f0\b \cf2 \cb3 \strokec28 Intermediate
+\f1\b0 \cf2 \cb3 \strokec28  : Consider the following code that attempts to access elements from a list:\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf27 \cb6 \strokec30 def\cf27 \strokec31  \cf27 \strokec32 get_element\cf27 \strokec31 (\cf27 \strokec33 my_list\cf27 \strokec31 , \cf27 \strokec33 index\cf27 \strokec31 ):\
+    \cf27 \strokec34 try\cf27 \strokec31 :\
+        \cf27 \strokec34 return\cf27 \strokec31  \cf27 \strokec33 my_list\cf27 \strokec31 [\cf27 \strokec33 index\cf27 \strokec31 ]\
+    \cf27 \strokec34 except\cf27 \strokec31  \cf27 \strokec37 IndexError\cf27 \strokec31 :\
+        \cf27 \strokec34 return\cf27 \strokec31  \cf27 \strokec36 "Index out of range"\cf27 \strokec31 \
+    \cf27 \strokec34 finally\cf27 \strokec31 :\
+        \cf27 \strokec32 print\cf27 \strokec31 (\cf27 \strokec36 "Execution completed"\cf27 \strokec31 )\
+\cf27 \strokec39 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec25 \'a0What would be the output for each of the following function calls?\cf27 \cb6 \strokec28 \
+\pard\pardeftab720\partightenfactor0
+\cf27 \strokec32 \
+\cf2 \cb3 \strokec40 print\cf2 \cb3 \strokec41 (get_element([\cf2 \cb3 \strokec42 10\cf2 \cb3 \strokec41 , \cf2 \cb3 \strokec42 20\cf2 \cb3 \strokec41 , \cf2 \cb3 \strokec42 30\cf2 \cb3 \strokec41 ], \cf2 \cb3 \strokec42 1\cf2 \cb3 \strokec41 ))\cf27 \cb6 \strokec31 \
+\
+Execution completed\
+20\
+\
+\cf2 \cb3 \strokec40 print\cf2 \cb3 \strokec41 (get_element([\cf2 \cb3 \strokec42 10\cf2 \cb3 \strokec41 , \cf2 \cb3 \strokec42 20\cf2 \cb3 \strokec41 , \cf2 \cb3 \strokec42 30\cf2 \cb3 \strokec41 ], \cf2 \cb3 \strokec42 5\cf2 \cb3 \strokec41 ))\cf27 \cb6 \strokec31 \
+\
+Execution completed\
+Index out of range\
+\
+\cf2 \cb3 \strokec40 print\cf2 \cb3 \strokec41 (get_element([], \cf2 \cb3 \strokec42 0\cf2 \cb3 \strokec41 ))\
+\cf27 \cb6 \strokec31 \
+Execution completed\
+Index out of range\
+\
+\pard\pardeftab720\partightenfactor0
+\cf43 \strokec28 6.\'a0\'a0 
+\f0\b \cf43 \strokec28 Advanced
+\f1\b0 \cf43 \strokec28  : Write a function called\'a0\cf43 \strokec44 process_user_input\cf43 \strokec28 \'a0that:\
+\'a0\'a0\'a0\'95\'a0\'a0\'a0Asks the user to enter a number\
+\'a0\'a0\'a0\'95\'a0\'a0\'a0Converts the input to an integer\
+\'a0\'a0\'a0\'95\'a0\'a0\'a0Returns the square of the number\
+\'a0\'a0\'a0\'95\'a0\'a0\'a0Handles potential errors (non-numeric input)\
+\'a0\'a0\'a0\'95\'a0\'a0\'a0Provides appropriate feedback to the user
+\f2\fs32 \cf45 \cb1 \strokec45 \
+
+\f1\fs30 \cf46 \cb47 \strokec46 \
+\pard\pardeftab720\partightenfactor0
+\cf27 \cb6 \strokec28 def process_user_input():\
+	num = int(input(\'91Enter a number: \'91))\
+	\
+	\
+\pard\pardeftab720\partightenfactor0
+\cf48 \outl0\strokewidth0 \
+sq_of_num = process_user_input(int(input(\'91Enter a number: \'91)))\cf27 \outl0\strokewidth0 \strokec28 \
+\pard\pardeftab720\partightenfactor0
+\cf27 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf46 \cb47 \strokec46 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf29 \cb3 \strokec31 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs30 \cf29 \cb3 \strokec23 	
+\fs28 \cf10 \cb6 \strokec23 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec50 \
+}
