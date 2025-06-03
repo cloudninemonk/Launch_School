@@ -3,49 +3,49 @@
 # Ask the user for an operation to perform.
 # Perform th eoperation on the two numbers.
 # Print the result to the terminal.
+# Ask the user if they would like to perform another calculation.
 
 print('Welcome to Calculator!')
+
+def calculate(number1, number2, operation):
+
+    if operation == '1':
+        return number1 + number2
+    elif operation == '2':
+        return number1 - number2
+    elif operation == '3':
+        return number1 * number2
+    elif operation == '4':
+        if number2:
+            return number1 / number2
+        else:
+            print("You cannot have a denominator with a value of zero")
+            return 'invalid'   
+    elif operation == '5':
+        return number1 ** number2
 
 response = True
 
 while response:
-    print("What's the first number?")
-    number1 = float(input())
-    print("What's the second number?")
-    number2 = float(input())
+    try:
+        print("What's the first number?")
+        number1 = float(input())
+        print("What's the second number?")
+        number2 = float(input())
+    except ValueError:
+        print("You did not enter a valid number.")
 
-    print('What operation would you like to perform?\n'
-          '1) Add 2) Subtract 3) Multiply 4) Divide 5) Exponential')
-    operation = input()
+    operation = ''
+    while operation not in ['1', '2', '3', '4', '5']:
+        print('What operation would you like to perform?\n'
+            '1) Add 2) Subtract 3) Multiply 4) Divide 5) Exponential')
+        operation = input()
 
-    def calculate(number1, number2):
-
-        if operation == '1':
-            result = number1 + number2 # Adds number1 to number2
-            return result
-        elif operation == '2':
-            result = number1 - number2 # Subtracts number2 from number1
-            return result
-        elif operation == '3':
-            result = number1 * number2 # Multiplies number1 by number2
-            return result
-        elif operation == '4':
-            if number2 == 0.0:
-                print("You cannot have a denominator with a value of zero")
-                result = 'invalid'
-            else:
-                result = number1 / number2 # Divides number1 by number2
-            return result
-        elif operation == '5':
-            result = number1 ** number2 # Raise number to the power of number2
-            return result
-
-    print(f'The result is: {calculate(number1, number2)}')
-    print('Would you like to perform another calculation? y/n')
-    
-    response = input()
-    if response == 'y':
+    print(f'The result is: {calculate(number1, number2, operation)}')
+    response = input('Would you like to perform another calculation? y/n \n').lower()
+    if response in ['y', 'yes', 'yeah', 'yeh']:
         continue
     else: 
         break
+    
 
