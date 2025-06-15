@@ -41,12 +41,13 @@ print(lower_first("FOO"))  # Output: "fOO"
 print(lower_first(32))     # Output: 32
 
 def process_user_input():
-    try:
-        num = int(input('Enter a number: '))
-        sq_num = num ** 2
-    except ValueError:
-        print('You need to enter a valid number.')
-    finally:
-        return sq_num
+    while True:
+        try:
+            num = int(input('Enter a number: '))
+            
+        except ValueError:
+            print('You need to enter a valid number.')
+        else:
+            return num ** 2
 	
 print(f'The square of your number is {process_user_input()}')
