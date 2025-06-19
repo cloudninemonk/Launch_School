@@ -3,10 +3,6 @@ import random
 
 VALID_CHOICES = ['rock', 'paper', 'scissors']
 
-# def prompt(message):
-#     """Standardises outputs from the program."""
-#     print(f'==> {message}')
-
 def display_winner(player, computer):
     """Displays the winner based on the player and computer choices."""
     prompt(f"You chose {user_choice}, the computer chose {computer_choice}.")
