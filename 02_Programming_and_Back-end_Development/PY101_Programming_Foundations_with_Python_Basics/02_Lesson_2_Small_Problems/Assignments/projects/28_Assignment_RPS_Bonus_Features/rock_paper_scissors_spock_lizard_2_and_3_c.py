@@ -12,33 +12,22 @@ VALID_CHOICES = {
     'l': 'lizard'
 }
 
+WINNING_COMBOS = {
+    'r': ['s', 'l'],      # rock beats scissors and lizard
+    'p': ['r', 'sp'],     # paper beats rock and spock
+    's': ['p', 'l'],      # scissors beats paper and lizard
+    'sp': ['s', 'r'],     # spock beats scissors and rock
+    'l': ['sp', 'p']      # lizard beats spock and paper
+}
+
 def display_winner(player, computer):
     """Displays the winner based on the player and computer choices."""
-    if ((player == 'r' and computer == 's') or
-        (player == 'r' and computer == 'l') or
-        (player == 'p' and computer == 'r') or
-        (player == 'p' and computer == 'sp') or
-        (player == 's' and computer == 'p') or
-        (player == 's' and computer == 'l') or
-        (player == 'sp' and computer == 's') or
-        (player == 'sp' and computer == 'r') or
-        (player == 'l' and computer == 'sp') or
-        (player == 'l' and computer == 'p')):
-
+    if computer in WINNING_COMBOS[player]:
         return "You win"
-    if ((player == 'r' and computer == 'p') or
-        (player == 'r' and computer == 'sp') or
-        (player == 'p' and computer == 's') or
-        (player == 'p' and computer == 'l') or
-        (player == 's' and computer == 'r') or
-        (player == 's' and computer == 'sp') or
-        (player == 'sp' and computer == 'p') or
-        (player == 'sp' and computer == 'l') or
-        (player == 'l' and computer == 'r') or
-        (player == 'l' and computer == 's')):
-
+    elif player in WINNING_COMBOS[computer]:
         return "Computer wins"
-    return "It's a tie"
+    else:
+        return "It's a tie"
 
 def match_points(winner, score):
     """Calculates each players score."""
@@ -56,9 +45,7 @@ def match_winner(score):
 
 def end_match(score):
     """Prompt to end the game if there is a winner."""
-    if score['player'] == 3 or score['computer'] == 3:
-        return True
-    return False
+    return score['player'] == 3 or score['computer'] == 3
 
 def prompt(message):
     """Standardises outputs from the program."""
@@ -71,22 +58,23 @@ while True:
     match_score = {'player': 0, 'computer': 0}
 
     while True:
-        prompt("Choose one of the following moves:")
-        for (key, value) in VALID_CHOICES.items():
-            prompt(f"'{key}' for '{value}'")
-        user_choice = input()
-
-        while user_choice not in VALID_CHOICES:
-            prompt("You entered an invalid move. Try again.")
-            user_choice = input()
+        user_choice = ''
+        while not user_choice.startswith(tuple(VALID_CHOICES)):
+            prompt("Choose one of the following moves:")
+            for (key, value) in VALID_CHOICES.items():
+                prompt(f"'{key}' for '{value}'")
+            user_choice = input().lower()[0]
+            if user_choice not in list(VALID_CHOICES):
+                prompt("Provide a valid response.")
 
         computer_choice = random.choice(list(VALID_CHOICES))
 
-        prompt(f"You chose {user_choice}, the computer chose {computer_choice}.")
+        prompt(f"You chose '{user_choice}', the computer chose '{computer_choice}'.")
 
-        prompt(display_winner(user_choice, computer_choice))
+        result = display_winner(user_choice, computer_choice)
+        prompt(result)
 
-        match_points(display_winner(user_choice, computer_choice), match_score)
+        match_points(result, match_score)
 
         prompt(f"The score is {match_score}")
 

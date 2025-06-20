@@ -27,7 +27,7 @@ def display_winner(player, computer):
         return "You win"
     if ((player == 'r' and computer == 'p') or
         (player == 'r' and computer == 'sp') or
-        (player == 'p' and computer == 'r') or
+        (player == 'p' and computer == 's') or
         (player == 'p' and computer == 'l') or
         (player == 's' and computer == 'r') or
         (player == 's' and computer == 'sp') or
