@@ -68,8 +68,8 @@ prompt("Welcome to Rock, Paper, Scissors, Spock, Lizard!" \
 "The first to 3 is the winner.")
 
 while True:
-    player_score = [0]
-    computer_score = [0]
+    player_score = 0
+    computer_score = 0
 
     while True:
         prompt("Choose one of the following moves:")
