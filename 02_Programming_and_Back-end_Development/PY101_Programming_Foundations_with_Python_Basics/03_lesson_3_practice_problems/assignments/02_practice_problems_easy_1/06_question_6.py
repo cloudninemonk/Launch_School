@@ -18,10 +18,3 @@ if str2.find('Dino') != -1:
     print("str2 contains 'Dino'")
 elif str2.find('Dino') == -1:
     print("str1 does not contain 'Dino'")
-
-"""
-LS Solution
-"""
-'Dino' in str1  # False
-'Dino' in str2  # True
-

@@ -1,0 +1,12 @@
+{
+"LS Solution Block": {
+  "prefix": "lsol",
+  "body": [
+    "# ==========",
+    "# LS Solution",
+    "# =========="
+  ],
+  "description": "Marks the LS solution section"
+}
+
+}
