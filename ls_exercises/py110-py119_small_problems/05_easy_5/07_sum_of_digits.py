@@ -1,0 +1,23 @@
+'''
+Write a function that takes one argument, a positive integer, and returns the sum of its digits.
+
+print(sum_digits(23) == 5)              # True
+print(sum_digits(496) == 19)            # True
+print(sum_digits(123456789) == 45)      # True
+'''
+# ==========
+# My Solution
+# ==========
+def sum_digits(integer):
+    return sum([int(num) for num in str(integer)])
+
+print(sum_digits(23) == 5)              # True
+print(sum_digits(496) == 19)            # True
+print(sum_digits(123456789) == 45)      # True
+
+# ==========
+# LS Solution
+# ==========
+def sum_digits(number):
+    digits = [int(digit) for digit in str(number)]
+    return sum(digits)
